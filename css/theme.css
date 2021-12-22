@@ -1,0 +1,474 @@
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('../fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+    cursor: pointer;    
+}
+.no-padding {
+	padding: 0px !important;
+}
+
+.no-margin {
+	margin: 0px !important;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #406882; 
+    border-radius: 5px;
+    background-color: #c4c4c4;
+}
+::-webkit-scrollbar-thumb {
+    background: #2b4d66; 
+    border-radius: 5px;    
+}
+::-webkit-scrollbar-thumb:hover {
+    background:#406882; 
+}
+
+/***** header *****/
+
+.headerLogout{
+    font-size: 24px;
+    float: right;
+    padding-right: 20px;
+    padding-top: 15px;
+}
+.headerBackground{
+    background-color: #1A374D;
+}
+
+/***** sidebar *****/
+
+.sideBarcontainer{
+    background-color: #1A374D;
+    height: 100vh;
+}   
+.sideBarheaderComheight{
+    height: 66px;
+}
+.sideBarcontainer h1{
+    font-family:'montserratbold'!important;
+    color: #ffff;
+    font-size: 32px;
+    padding: 13px 0px;
+}
+.sideBaruserName{
+    font-size: 20px;
+    color: #ffff;
+    padding: 16px 0px;
+    border-top: 1px solid #ffff;
+    border-bottom: 1px solid #ffff;
+}
+.nav-display-flex{
+    display: inline-flex;
+    padding-left: 15px;
+}
+.dropdown-box-toggle{
+    font-size: 14px;
+    color:#ffff!important;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.dropdown-box-toggle:hover{
+    background-color: #B1D0E0!important;
+    color:#000!important;
+    cursor: pointer;
+}
+.dropdown-box-item{
+    color: #ffff!important;
+    font-size: 14px;
+    padding-left: 46px;
+    cursor: pointer;
+    text-decoration: none!important;
+}
+.dropdown-boxShow{
+    display: none;
+}
+.navDropdownIndicator{
+    display: inline-flex;
+    float: right;
+    padding-top: 2px;
+}
+.navDropdownIndicatorup{
+    display: none;
+}
+.dropdown-box-item label{
+    cursor: pointer;
+}
+.dropdown-box-item:hover{
+    background-color: #1A374D;         
+    padding-left: 67px; 
+}
+.dropdown-box-toggle::after{
+    display: none;
+}
+.fa-rotate-45 {    
+    transform: rotate(45deg);
+}
+.dropdown-box-item-pad_left{
+    padding-left: 8px;
+}
+.nav-first-link-margin-top{
+    margin-top: 15px;
+}
+.nav-first-link-decoration{    
+    text-decoration: none!important;
+}
+
+/***** lead *****/
+
+.container-1280{
+    width: 100%; 
+    font-family:'montserratmedium';       
+}
+.w-90{
+    width: 90%;
+}
+.leadInsidecontainerPad{
+    padding-top: 18px;
+}
+.insideContainerbox{
+    height: 100vh;
+    background-color: #6998AB;
+}
+.leadSearch{
+    border: none;
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+}
+.leadSearchbox{
+    background-color: #ffff;
+    border-radius: 10px;    
+}
+.scrollableLeadlistsPad{
+    padding: 0px 19px;
+}
+.leadSearchboxContainer{
+    padding:14px 0px;
+    height: 58px;
+}
+.leadSearchsidecontainerBoxshadow{
+    box-shadow: 1px 1px 20px #406882;
+    margin: 0px 19px;            
+}
+.scrollableLeadlists{
+    overflow-y: scroll;  
+    height: 74vh;
+    width: 100%;
+}
+.leadLabelbox{
+    border-radius: 10px;
+    background-color: #406882;
+    margin-bottom: 13px;
+    padding: 10px 31px;
+    color: #ffff;
+    width: 98%;
+}
+.leadLabelbox h3{
+    font-size: 14px;
+}
+.leadLabelbox label{
+    font-size: 12px;
+}
+.leadNamecontainer{    
+    background-color: #406882;
+    margin-right: 18px;
+    border-radius: 10px;       
+    position: relative;
+}
+.verticalHeightadj{
+    height: 74vh;
+}
+.leadNamecontainer h1{
+    font-size: 23px;
+    color: #ffff;
+}
+.leadNamecontainerHeader{
+    padding: 15px;
+    height: 58px;
+}
+.leadNamecontainerOne{
+    margin: 15px;
+    background-color: #6998AB;
+    border-radius: 10px;
+}
+.lightText{
+    font-size: 12px;
+    opacity: 50%;
+    color: #ffff;
+}
+.darkText{
+    font-size: 14px;    
+    color: #ffff;
+}
+.leadNamecontainerInsidepad{
+    padding: 11px 15px;
+}
+.leadButtonbox{
+    position: absolute;
+    width: 100%;
+    top: 92%;
+    text-align: right;
+    padding: 0px 40px;        
+}
+.leadButtonbox button{  
+    font-size: 14px;        
+    width: 100px;
+    padding: 5px 0px;
+    margin-left: 14px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px #1A374D;
+}
+.btnRed{
+    background-color: #884949;
+    color: #ffff;
+}
+.btnWhite{
+    background-color: #AFAFAF;
+    color: #000000;
+}
+.ifScrollablelead{
+    height: 65vh;
+    overflow-y: scroll;
+}
+
+/***** login *****/
+
+.loginBackground{
+    background-color: #1A374D;
+    height: 100vh;
+    position: relative;
+}
+.loginContainer{
+    width: 490px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #6998AB;
+    padding: 0px 25px;
+}
+.loginContainer input{
+    color: #ffff;
+}
+.loginContainer input:focus{    
+    color: #ffff;
+    opacity: 50%;    
+}
+.loginImg{
+    padding: 17px 0px;
+}
+.loginBtn{
+    margin: 50px 0px 100px 0px;
+    border: none;
+    background-color: #406882;
+    padding: 10px 55px;
+}
+.loginBackground input{
+    background-color: #6998AB;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffff;
+    margin-top: 10px;
+}
+.loginInputpad{
+    padding-top:23px;
+}
+
+/***** create lead *****/
+
+.leardCreatecontainer{
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+.leadCreatecontainerOne{
+    background-color: #406882;
+    border-radius: 10px;   
+    width: 99%; 
+}
+.leardCreatecontainer input{
+    background-color: #406882;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffff;
+    margin-top: 10px;
+    color: #ffff;
+}
+.leardCreatecontainer input:focus{    
+    color: #ffff;
+    opacity: 50%;    
+}
+.leardCreatecontainer h1{
+    font-size: 23px;
+    color: #ffff;
+}
+.createLeadtitle{
+    margin-top: 15px;
+}
+.createLeadsubTitle{
+    font-size: 16px;
+    color: #ffff;
+    padding-top: 15px;
+}
+.ifScrollablecreateLead{
+    overflow-y: scroll;
+    height: 72vh;
+}
+.leadCreatebuttonBox{
+    position: absolute;
+    width: 100%;
+    top: 104%;
+    text-align: right;          
+}
+.leadCreatebuttonBox button{      
+    font-size: 14px;    
+    width: 100px;
+    padding: 5px 0px;    
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px #1A374D;
+}
+.btnGreen{
+    background-color: #55A667;
+}
+
+/***** editLeadtitle *****/
+
+.editLeadtitle{
+    margin: 15px 0px;
+}
+.editCreatebuttonBox{
+    position: absolute;
+    width: 100%;
+    top: 102%;
+    text-align: right;          
+}
+.editCreatebuttonBox button{ 
+    font-size: 14px;         
+    width: 100px;
+    padding: 5px 0px;    
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px #1A374D;
+}
+
+/***** leadresult *****/
+
+.leadResultbtnBox{
+    padding: 10px 34px;
+}
+.leadResultcontainer{
+    width: 95%;
+    margin: auto;    
+}
+.leadResultcontainer h1{
+    font-size: 23px;
+    color: #ffff;
+}
+.leadResultcontainerOne{
+    background-color: #406882;
+    border-radius: 10px;    
+}
+.leadResultcontainer input{
+    background-color: #406882;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ffff;
+    margin-top: 10px;
+    color: #ffff;
+}
+.leadResultcontainer input:focus{    
+    color: #ffff;
+    opacity: 50%;    
+}
+.leadResultbtnBox button{
+    font-size: 14px;           
+    width: 100px;
+    padding: 5px 0px;    
+    border: none;
+    border-radius: 10px;
+    background-color: #1A374D;    
+}
+.leadResultcontainerBox{    
+    width: 95%;
+    margin: auto;
+    box-shadow: 1px 1px 20px #406882;
+    background-color: #6998AB;
+    padding-top: 10px;
+}
+.leadResultheader{
+    font-size: 16px;
+    color: #ffff;
+    padding: 6px 0px;
+    width: 95%;
+    margin:0 auto;
+}
+.leadResultscrollable{
+    color: #ffff;
+}
+.leadResultscrollable h2{
+    font-size: 14px;  
+    display: inline-flex;  
+}
+.leadResultscrollable label{
+    font-size: 12px;
+}
+.resultLabelbox{
+    border-radius: 10px;
+    background-color: #406882;
+    margin-bottom: 13px;
+    padding: 10px 31px;
+    color: #ffff;    
+}
+.leadResultscrollable{
+    height: 25vh;
+    overflow-y: scroll;
+}
+.statsDownicon::after{
+    display: none;
+}
+.dropdownPosition{
+    position: relative;
+    width: 75%;
+}
+.dropdownabsPosition{
+    position:absolute;
+    top: 15px;
+    right: 0px;
+}
+.leadResultstatusbackGround{
+    background-color: #6998AB;
+}
+.dropdownText{
+    padding-left: 10px;
+    opacity: 100%;
+    cursor: pointer;
+}
+.dropdownabsPosition .dropdown-menu{
+    min-width: 100px;
+}

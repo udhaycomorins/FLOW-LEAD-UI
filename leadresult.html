@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>LeadResult</title>    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/theme.css">
+    </head>
+    <body>
+        <div class="container-1280">
+            <div class="row no-margin">
+                <div class="col-lg-2 no-padding sideBarcontainer">
+                    <h1 class="text-center no-margin sideBarheaderComheight">FLOW</h1>
+                    <h3 class="text-center no-margin sideBaruserName">User Name</h3>
+                    <div class="nav-first-link-margin-top">
+                        <a class="nav-first-link-decoration" href="lead.html">                        
+                            <div class="dropdown-box-toggle">
+                                <i class="fa fa-home fa-pad-left"></i>
+                                <p class="nav-display-flex no-margin">Home</p>                            
+                            </div>                                                
+                        </a>
+                    </div>
+                    <div class="dropdown-box-container">                        
+                        <div class="dropdown-box-toggle dropdown-box-toggleLeads">
+                            <i class="fa fa-users fa-pad-left"></i>
+                            <p class="nav-display-flex no-margin">Leads</p> 
+                            <div class="navDropdownIndicator">
+                                <i class="fa fa-caret-down navDropdownIndicatordown"></i>                                                         
+                            </div>
+                        </div>                        
+                        <div class="dropdown-box dropdown-boxShow">
+                            <a class="dropdown-box-item d-block" href="createlead.html">
+                                <i class="fa fa-location-arrow fa-rotate-45"></i>
+                                <label class="dropdown-box-item-pad_left">Create</label>
+                            </a>
+                            <a class="dropdown-box-item d-block" href="leadresult.html">
+                                <i class="fa fa-location-arrow fa-rotate-45"></i>
+                                <label class="dropdown-box-item-pad_left">Search</label>
+                            </a>                          
+                        </div>
+                    </div>                    
+                </div>
+                <div class="col-lg-10 no-padding insideContainerbox">
+                    <div class="sideBarheaderComheight headerBackground">
+                        <a class="headerLogout"><i class="fa fa-sign-out text-white"></i></a>
+                    </div>  
+                    <div class="leadResultcontainer">                        
+                        <div class="editLeadtitle">
+                            <h1 class="no-margin">CREATE LEAD</h1> 
+                        </div> 
+                        <div class="leadResultcontainerOne">
+                            <div class="row no-margin leadNamecontainerInsidepad">
+                                <div class="col-lg-6 no-padding">                                    
+                                    <p class="no-margin lightText">Created from</p>
+                                    <input class="w-75 loginInput">                                                                             
+                                </div>
+                                <div class="col-lg-6 no-padding">
+                                    <p class="no-margin lightText">Created to</p>
+                                    <input class="w-75 loginInput">
+                                </div>
+                            </div>
+                            <div class="row no-margin leadNamecontainerInsidepad">
+                                <div class="col-lg-6 no-padding">                                    
+                                    <p class="no-margin lightText">Status</p>
+                                    <div class="dropdownPosition">
+                                        <input class="loginInput w-100">
+                                        <div class="dropdown dropdownabsPosition">
+                                            <i class="fa fa-angle-down text-white dropdown-toggle statsDownicon" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+                                            <div class="dropdown-menu leadResultstatusbackGround" aria-labelledby="dropdownMenuButton">
+                                                <p class="no-margin lightText dropdownText">Progress</p>
+                                                <p class="no-margin lightText dropdownText">Paid</p>
+                                            </div>
+                                        </div>
+                                    </div>                                                                                                                                                       
+                                </div>
+                                <div class="col-lg-6 no-padding">
+                                    <p class="no-margin lightText">Account Number</p>
+                                    <input class="w-75 loginInput">
+                                </div>
+                            </div>
+                            <div class="row no-margin leadNamecontainerInsidepad">
+                                <div class="col-lg-6 no-padding">
+                                    <p class="no-margin lightText">Biz Name / Cust Name</p>
+                                    <input class="w-75 loginInput">                                            
+                                </div>
+                                <div class="col-lg-6 no-padding">
+                                    <p class="no-margin lightText">Mobile Number</p>
+                                    <input class="w-75 loginInput">
+                                </div>                                
+                            </div>
+                            <div class="text-right leadResultbtnBox">
+                                <button class="text-white">Search</button>                                                        
+                            </div>                            
+                        </div>                                                                         
+                    </div>
+                    <h1 class="leadResultheader">RESULT</h1> 
+                    <div class="leadResultcontainerBox">                           
+                        <div class="leadResultscrollable">
+                            <div class="row no-margin">
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-margin">
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-margin">
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-margin">
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row no-margin">
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="resultLabelbox">
+                                        <h2>LEAD NAME</h2>
+                                        <a class="float-right" href="editlead.html"><i class="fa fa-edit text-white"></i></a>
+                                        <label class="d-block">Created at:</label>
+                                        <label class="d-block">Status:</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                                                                                                     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</html>
