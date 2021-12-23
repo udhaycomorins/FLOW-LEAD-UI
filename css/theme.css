@@ -256,6 +256,23 @@ a{
     overflow-y: scroll;
 }
 
+@media (min-width: 767.98px) {
+    .leadSearch{
+        padding: 10px 6px;
+        width: 85%;
+        font-size: 10px;
+    }
+    .leadLabelbox{
+        padding: 10px;
+    }
+    .leadLabelbox h3{
+        font-size: 10px;
+    }
+    .leadLabelbox label{
+        font-size: 8px;
+    }
+}
+
 /***** login *****/
 
 .loginBackground{
@@ -297,6 +314,35 @@ a{
 }
 .loginInputpad{
     padding-top:23px;
+}
+.logoutRoute a{
+    text-decoration: none!important;
+    color: #ffff;
+}
+.logoutRoutewaker{
+    text-decoration: none!important;
+    color: #ffff;
+}
+.logoutRoutewaker::after{
+    display: none;
+}
+.flowRoundiconBox{
+    padding: 10px;
+}
+.flowRoundiconBox img{
+    width: 100%;
+}
+.homeIconrefont{
+    font-size: 16px;
+}
+.userNamerefont{
+    font-size: 14px;
+}
+.sideBarfnIcon{
+    padding-left: 30px!important;
+}
+.sideBarfnIconpad{
+    padding-right: 3px;
 }
 
 /***** create lead *****/

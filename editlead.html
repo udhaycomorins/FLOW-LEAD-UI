@@ -11,7 +11,8 @@
     <body>
         <div class="container-1280">
             <div class="row no-margin">
-                <div class="col-lg-2 no-padding sideBarcontainer">
+                <!-- side bar start -->
+                <div class="col-lg-2 d-none d-lg-block no-padding sideBarcontainer">
                     <h1 class="text-center no-margin sideBarheaderComheight">FLOW</h1>
                     <h3 class="text-center no-margin sideBaruserName">User Name</h3>
                     <div class="nav-first-link-margin-top">
@@ -40,12 +41,54 @@
                                 <label class="dropdown-box-item-pad_left">Search</label>
                             </a>                          
                         </div>
-                    </div>
+                    </div>                    
                 </div>
-                <div class="col-lg-10 no-padding insideContainerbox">
+                <!-- only shown in medium device part start -->
+                <div class="col-md-1 d-none d-md-block d-lg-none no-padding sideBarcontainer">
+                    <!-- <h1 class="text-center no-margin sideBarheaderComheight">FLOW</h1> -->
+                    <div class="sideBarheaderComheight flowRoundiconBox">
+                        <img src="images/flowroundlogo.png"/>
+                    </div>                    
+                    <h3 class="text-center no-margin sideBaruserName userNamerefont">User Name</h3>
+                    <div class="nav-first-link-margin-top">
+                        <a class="nav-first-link-decoration" href="lead.html">                        
+                            <div class="dropdown-box-toggle homeIconrefont">
+                                <i class="fa fa-home fa-pad-left"></i>                                                           
+                            </div>                                                
+                        </a>
+                    </div>
+                    <div class="dropdown-box-container">                        
+                        <div class="dropdown-box-toggle dropdown-box-toggleLeads">
+                            <i class="fa fa-users fa-pad-left"></i>                            
+                            <div class="navDropdownIndicator">
+                                <i class="fa fa-caret-down navDropdownIndicatordown"></i>                                                         
+                            </div>
+                        </div>                        
+                        <div class="dropdown-box dropdown-boxShow">
+                            <a class="dropdown-box-item d-block sideBarfnIcon" href="createlead.html">
+                                <i class="fa fa-search sideBarfnIconpad"></i>
+                                <label>S</label>
+                            </a>
+                            <a class="dropdown-box-item d-block sideBarfnIcon" href="leadresult.html">
+                                <i class="fa fa-plus sideBarfnIconpad"></i>
+                                <label>C</label>
+                            </a>                          
+                        </div>
+                    </div>                    
+                </div>
+                <!-- only shown in medium device part end -->
+                <!-- side bar end -->
+                <div class="col-lg-10 col-md-11 no-padding insideContainerbox">
+                    <!-- navbar start -->
                     <div class="sideBarheaderComheight headerBackground">
-                        <a class="headerLogout"><i class="fa fa-sign-out text-white"></i></a>
-                    </div>  
+                        <a class="headerLogout dropdown-toggle logoutRoutewaker" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-sign-out text-white"></i>                            
+                        </a>
+                        <div class="dropdown-menu leadResultstatusbackGround text-center logoutRoute" aria-labelledby="dropdownMenuButton">
+                            <a class="no-margin lightText dropdownText" href="login.html">Logout</a>                            
+                        </div>
+                    </div> 
+                    <!-- navbar end -->  
                     <div class="leardCreatecontainer">                        
                         <div class="editLeadtitle">
                             <h1 class="no-margin">EDIT LEAD</h1> 
@@ -53,11 +96,11 @@
                         <div class="ifScrollablecreateLead">
                             <div class="leadCreatecontainerOne">
                                 <div class="row no-margin leadNamecontainerInsidepad">
-                                    <div class="col-lg-6 no-padding">                                    
+                                    <div class="col-md-6 no-padding">                                    
                                         <p class="no-margin lightText">Status</p>
                                         <input class="w-75 loginInput">                                                                             
                                     </div>
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">Terminal ID</p>
                                         <input class="w-75 loginInput">
                                     </div>
@@ -66,21 +109,21 @@
                             <h3 class="createLeadsubTitle no-margin">Biz Info</h3>                                                                      
                             <div class="leadCreatecontainerOne">
                                 <div class="row no-margin leadNamecontainerInsidepad">
-                                    <div class="col-lg-6 no-padding">                                    
+                                    <div class="col-md-6 no-padding">                                    
                                         <p class="no-margin lightText">Account Number / SC Code</p>
                                         <input class="w-75 loginInput">                                                                             
                                     </div>
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">Mobile Number</p>
                                         <input class="w-75 loginInput">
                                     </div>
                                 </div>
                                 <div class="row no-margin leadNamecontainerInsidepad">
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">Business Name / Cust Name</p>
                                         <input class="w-75 loginInput">                                            
                                     </div>
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">National ID</p>
                                         <input class="w-75 loginInput">
                                     </div>
@@ -89,51 +132,51 @@
                             <h3 class="createLeadsubTitle no-margin">KYC</h3>                                                                      
                             <div class="leadCreatecontainerOne">
                                 <div class="row no-margin leadNamecontainerInsidepad">
-                                    <div class="col-lg-6 no-padding">                                    
+                                    <div class="col-md-6 no-padding">                                    
                                         <p class="no-margin lightText">Abbrevation Name</p>
                                         <input class="w-75 loginInput">                                                                             
                                     </div>
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">Company Registration No</p>
                                         <input class="w-75 loginInput">
                                     </div>
                                 </div>
                                 <div class="row no-margin leadNamecontainerInsidepad">
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">Nature Of Business</p>
                                         <input class="w-75 loginInput">                                            
                                     </div>
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">Operated By</p>
                                         <input class="w-75 loginInput">
                                     </div>
                                 </div>
                                 <div class="row no-margin leadNamecontainerInsidepad">
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">Bank Code</p>
                                         <input class="w-75 loginInput">                                            
                                     </div>
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">Bank Account</p>
                                         <input class="w-75 loginInput">
                                     </div>
                                 </div>
                                 <div class="row no-margin leadNamecontainerInsidepad">
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">Bank Account Name</p>
                                         <input class="w-75 loginInput">                                            
                                     </div>
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">Wallet Type</p>
                                         <input class="w-75 loginInput">
                                     </div>
                                 </div>
                                 <div class="row no-margin leadNamecontainerInsidepad">
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">Recruiter ID</p>
                                         <input class="w-75 loginInput">                                            
                                     </div>
-                                    <div class="col-lg-6 no-padding">
+                                    <div class="col-md-6 no-padding">
                                         <p class="no-margin lightText">Zone</p>
                                         <input class="w-75 loginInput">
                                     </div>

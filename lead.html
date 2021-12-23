@@ -11,7 +11,8 @@
     <body>
         <div class="container-1280">
             <div class="row no-margin">
-                <div class="col-lg-2 no-padding sideBarcontainer">
+                <!-- side bar start -->
+                <div class="col-lg-2 d-none d-lg-block no-padding sideBarcontainer">
                     <h1 class="text-center no-margin sideBarheaderComheight">FLOW</h1>
                     <h3 class="text-center no-margin sideBaruserName">User Name</h3>
                     <div class="nav-first-link-margin-top">
@@ -40,14 +41,56 @@
                                 <label class="dropdown-box-item-pad_left">Search</label>
                             </a>                          
                         </div>
-                    </div>                                                            
+                    </div>                    
                 </div>
-                <div class="col-lg-10 no-padding insideContainerbox">
+                <!-- only shown in medium device part start -->
+                <div class="col-md-1 d-none d-md-block d-lg-none no-padding sideBarcontainer">
+                    <!-- <h1 class="text-center no-margin sideBarheaderComheight">FLOW</h1> -->
+                    <div class="sideBarheaderComheight flowRoundiconBox">
+                        <img src="images/flowroundlogo.png"/>
+                    </div>                    
+                    <h3 class="text-center no-margin sideBaruserName userNamerefont">User Name</h3>
+                    <div class="nav-first-link-margin-top">
+                        <a class="nav-first-link-decoration" href="lead.html">                        
+                            <div class="dropdown-box-toggle homeIconrefont">
+                                <i class="fa fa-home fa-pad-left"></i>                                                           
+                            </div>                                                
+                        </a>
+                    </div>
+                    <div class="dropdown-box-container">                        
+                        <div class="dropdown-box-toggle dropdown-box-toggleLeads">
+                            <i class="fa fa-users fa-pad-left"></i>                            
+                            <div class="navDropdownIndicator">
+                                <i class="fa fa-caret-down navDropdownIndicatordown"></i>                                                         
+                            </div>
+                        </div>                        
+                        <div class="dropdown-box dropdown-boxShow">
+                            <a class="dropdown-box-item d-block sideBarfnIcon" href="createlead.html">
+                                <i class="fa fa-search sideBarfnIconpad"></i>
+                                <label>S</label>
+                            </a>
+                            <a class="dropdown-box-item d-block sideBarfnIcon" href="leadresult.html">
+                                <i class="fa fa-plus sideBarfnIconpad"></i>
+                                <label>C</label>
+                            </a>                          
+                        </div>
+                    </div>                    
+                </div>
+                <!-- only shown in medium device part end -->
+                <!-- side bar end -->
+                <div class="col-lg-10 col-md-11 no-padding insideContainerbox">
+                    <!-- navbar start -->
                     <div class="sideBarheaderComheight headerBackground">
-                        <a class="headerLogout"><i class="fa fa-sign-out text-white"></i></a>
-                    </div>   
+                        <a class="headerLogout dropdown-toggle logoutRoutewaker" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa fa-sign-out text-white"></i>                            
+                        </a>
+                        <div class="dropdown-menu leadResultstatusbackGround text-center logoutRoute" aria-labelledby="dropdownMenuButton">
+                            <a class="no-margin lightText dropdownText" href="login.html">Logout</a>                            
+                        </div>
+                    </div> 
+                    <!-- navbar end -->  
                     <div class="row no-margin leadInsidecontainerPad">
-                        <div class="col-lg-4 no-padding">
+                        <div class="col-md-4 no-padding">
                             <div class="leadSearchsidecontainerBoxshadow">
                                 <div class="scrollableLeadlistsPad"> 
                                     <div class="leadSearchboxContainer">
@@ -116,7 +159,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-8 no-padding">
+                        <div class="col-md-8 no-padding">
                             <div class="leadNamecontainer">
                                 <div class="leadNamecontainerHeader">
                                     <h1 class="no-margin">LEAD NAME</h1>
@@ -125,21 +168,21 @@
                                     <div class="ifScrollablelead">
                                         <div class="leadNamecontainerOne">
                                             <div class="row no-margin leadNamecontainerInsidepad">
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Account Number / SC Code</p>
                                                     <p class="darkText no-margin">123456</p>                                            
                                                 </div>
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Mobile Number</p>
                                                     <p class="darkText no-margin">999888777</p>
                                                 </div>
                                             </div>
                                             <div class="row no-margin leadNamecontainerInsidepad">
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Biz Name / Cust Name</p>
                                                     <p class="darkText no-margin">BUSINESS NAME</p>                                            
                                                 </div>
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">National ID</p>
                                                     <p class="darkText no-margin">C90NATIONALID</p>
                                                 </div>
@@ -147,11 +190,11 @@
                                         </div>
                                         <div class="leadNamecontainerOne">
                                             <div class="row no-margin leadNamecontainerInsidepad">
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Account Number / SC Code</p>
                                                     <p class="darkText no-margin">123456</p>                                            
                                                 </div>
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Mobile Number</p>
                                                     <p class="darkText no-margin">999888777</p>
                                                 </div>
@@ -159,61 +202,61 @@
                                         </div>
                                         <div class="leadNamecontainerOne">
                                             <div class="row no-margin leadNamecontainerInsidepad">
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Abrrevation Name</p>
                                                     <p class="darkText no-margin">123456</p>                                            
                                                 </div>
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Company Registration No</p>
                                                     <p class="darkText no-margin">999888777</p>
                                                 </div>
                                             </div>
                                             <div class="row no-margin leadNamecontainerInsidepad">
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Nature Of Business</p>
                                                     <p class="darkText no-margin">BUSINESS NAME</p>                                            
                                                 </div>
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Operated By</p>
                                                     <p class="darkText no-margin">C90NATIONALID</p>
                                                 </div>
                                             </div>
                                             <div class="row no-margin leadNamecontainerInsidepad">
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Bank Code</p>
                                                     <p class="darkText no-margin">123456</p>                                            
                                                 </div>
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Bank Account</p>
                                                     <p class="darkText no-margin">999888777</p>
                                                 </div>
                                             </div>
                                             <div class="row no-margin leadNamecontainerInsidepad">
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Account Number / SC Code</p>
                                                     <p class="darkText no-margin">123456</p>                                            
                                                 </div>
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Mobile Number</p>
                                                     <p class="darkText no-margin">999888777</p>
                                                 </div>
                                             </div>
                                             <div class="row no-margin leadNamecontainerInsidepad">
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Bank Account Name</p>
                                                     <p class="darkText no-margin">Bank Account Name</p>                                            
                                                 </div>
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Wallet Type</p>
                                                     <p class="darkText no-margin">Wallet Type</p>
                                                 </div>
                                             </div>
                                             <div class="row no-margin leadNamecontainerInsidepad">
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Recruiter ID</p>
                                                     <p class="darkText no-margin">BUSINESS NAME</p>                                            
                                                 </div>
-                                                <div class="col-lg-6 no-padding">
+                                                <div class="col-md-6 no-padding">
                                                     <p class="lightText no-margin">Zone</p>
                                                     <p class="darkText no-margin">C90NATIONALID</p>
                                                 </div>
