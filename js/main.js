@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     var countVal = 1;    
-    $(".dropdown-box-toggleLeads").on('click',function(now){
+    $(".dropdown-box-toggleLeads").on('click',function(){
         var countValadded = countVal++;        
         if( countValadded %2 != 0) {
             $(".dropdown-boxShow").slideDown(300);

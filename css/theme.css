@@ -55,13 +55,13 @@ a{
     padding-top: 15px;
 }
 .headerBackground{
-    background-color: #1A374D;
+    background-color: #2D5371;
 }
 
 /***** sidebar *****/
 
 .sideBarcontainer{
-    background-color: #1A374D;
+    background-color: #2D5371;
     height: 100vh;
 }   
 .sideBarheaderComheight{
@@ -127,7 +127,8 @@ a{
     transform: rotate(45deg);
 }
 .dropdown-box-item-pad_left{
-    padding-left: 8px;
+    padding: 5px;
+    margin: 0px;
 }
 .nav-first-link-margin-top{
     margin-top: 15px;
@@ -150,7 +151,7 @@ a{
 }
 .insideContainerbox{
     height: 100vh;
-    background-color: #6998AB;
+    background-image: linear-gradient(to bottom, #37A5D1, #00374E);
 }
 .leadSearch{
     border: none;
@@ -181,11 +182,14 @@ a{
 }
 .leadLabelbox{
     border-radius: 10px;
-    background-color: #406882;
+    background-image: linear-gradient(to bottom, #306F98, #71B8E7);
     margin-bottom: 13px;
     padding: 10px 31px;
     color: #ffff;
     width: 98%;
+}
+.leadLabelboxnoMarginbot{
+    margin-bottom: 0px;
 }
 .leadLabelbox h3{
     font-size: 14px;
@@ -194,7 +198,7 @@ a{
     font-size: 12px;
 }
 .leadNamecontainer{    
-    background-color: #406882;
+    background-image: linear-gradient(to bottom, #306F98, #71B8E7);
     margin-right: 18px;
     border-radius: 10px;       
     position: relative;
@@ -211,9 +215,12 @@ a{
     height: 58px;
 }
 .leadNamecontainerOne{
-    margin: 15px;
-    background-color: #6998AB;
+    margin: 0px 15px 15px 15px;
+    background-image: linear-gradient(to bottom, #37A5D1, #00374E);
     border-radius: 10px;
+}
+.leadNamecontainerOnenoMarginBot{
+    margin-bottom: 0px;
 }
 .lightText{
     font-size: 12px;
@@ -225,7 +232,7 @@ a{
     color: #ffff;
 }
 .leadNamecontainerInsidepad{
-    padding: 11px 15px;
+    padding: 7px 15px;
 }
 .leadButtonbox{
     position: absolute;
@@ -281,20 +288,21 @@ a{
     position: relative;
 }
 .loginContainer{
-    width: 490px;
+    width: 420px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #6998AB;
+    background-image: linear-gradient(to bottom, #37A5D1, #00374E);
     padding: 0px 25px;
+    box-shadow: 0px 5px 10px #0000;
 }
 .loginContainer input{
     color: #ffff;
+    background: transparent!important;
 }
 .loginContainer input:focus{    
-    color: #ffff;
-    opacity: 50%;    
+    color: #ffff;       
 }
 .loginImg{
     padding: 17px 0px;
@@ -302,8 +310,8 @@ a{
 .loginBtn{
     margin: 50px 0px 100px 0px;
     border: none;
-    background-color: #406882;
-    padding: 10px 55px;
+    background-image: linear-gradient(to bottom,#306F98, #71B8E7);
+    padding: 5px 50px;
 }
 .loginBackground input{
     background-color: #6998AB;
@@ -347,39 +355,40 @@ a{
 
 /***** create lead *****/
 
-.leardCreatecontainer{
-    width: 95%;
+.leadCreatecontainer{
+    width: 97%;
     margin: auto;
     position: relative;
 }
 .leadCreatecontainerOne{
-    background-color: #406882;
+    background-image: linear-gradient(to bottom, #306F98, #71B8E7);
     border-radius: 10px;   
     width: 99%; 
 }
-.leardCreatecontainer input{
-    background-color: #406882;
+.leadCreatecontainer input{
+    background: transparent!important;
     border: none;
     outline: none;
-    border-bottom: 1px solid #ffff;
-    margin-top: 10px;
+    border-bottom: 1px solid #ffff;    
     color: #ffff;
 }
-.leardCreatecontainer input:focus{    
-    color: #ffff;
-    opacity: 50%;    
+.leadCreatecontainer input:focus{    
+    color: #ffff;        
 }
-.leardCreatecontainer h1{
+.leadCreatecontainer h1{
     font-size: 23px;
     color: #ffff;
 }
 .createLeadtitle{
-    margin-top: 15px;
+    margin: 15px 0px;
 }
 .createLeadsubTitle{
     font-size: 16px;
     color: #ffff;
     padding-top: 15px;
+}
+.createLeadsubTitlenoPadtop{
+    padding-top: 0px;
 }
 .ifScrollablecreateLead{
     overflow-y: scroll;
@@ -388,7 +397,7 @@ a{
 .leadCreatebuttonBox{
     position: absolute;
     width: 100%;
-    top: 104%;
+    top: 102%;
     text-align: right;          
 }
 .leadCreatebuttonBox button{      
@@ -400,7 +409,7 @@ a{
     box-shadow: 0px 8px 10px #1A374D;
 }
 .btnGreen{
-    background-color: #55A667;
+    background-color: #B1D0E0;
 }
 
 /***** editLeadtitle *****/
@@ -437,15 +446,14 @@ a{
     color: #ffff;
 }
 .leadResultcontainerOne{
-    background-color: #406882;
+    background-image: linear-gradient(to bottom, #306F98, #71B8E7);
     border-radius: 10px;    
 }
 .leadResultcontainer input{
-    background-color: #406882;
+    background: transparent!important;
     border: none;
     outline: none;
-    border-bottom: 1px solid #ffff;
-    margin-top: 10px;
+    border-bottom: 1px solid #ffff;    
     color: #ffff;
 }
 .leadResultcontainer input:focus{    
@@ -464,7 +472,7 @@ a{
     width: 95%;
     margin: auto;
     box-shadow: 1px 1px 20px #406882;
-    background-color: #6998AB;
+    background-image: linear-gradient(to bottom, #37A5D1, #00374E);
     padding-top: 10px;
 }
 .leadResultheader{
@@ -486,13 +494,13 @@ a{
 }
 .resultLabelbox{
     border-radius: 10px;
-    background-color: #406882;
+    background-image:linear-gradient( to bottom, #306F98, #71B8E7);
     margin-bottom: 13px;
     padding: 10px 31px;
     color: #ffff;    
 }
 .leadResultscrollable{
-    height: 25vh;
+    height: 35vh;
     overflow-y: scroll;
 }
 .statsDownicon::after{
@@ -504,7 +512,7 @@ a{
 }
 .dropdownabsPosition{
     position:absolute;
-    top: 15px;
+    top: 0px;
     right: 0px;
 }
 .leadResultstatusbackGround{
@@ -515,6 +523,35 @@ a{
     opacity: 100%;
     cursor: pointer;
 }
+.dropdownTextinside:hover{
+    background-color: #1A374D;
+}
 .dropdownabsPosition .dropdown-menu{
     min-width: 100px;
+}
+
+/***** statusIndication *****/
+
+.statusText{
+    display: inline-flex;
+    color: #ffff;
+    font-size: 10px;
+}
+.statusImg{
+    width: 20px;
+}
+.statusBorder{
+    border-right: dashed 1px #FFFFFF;
+    position: relative;
+}
+.statusBox{
+    position: absolute;
+    top: 50%;
+    right: -10px;    
+}
+
+/***** datepicker style *****/
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
 }
