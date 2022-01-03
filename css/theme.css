@@ -590,3 +590,27 @@ a{
     max-width: 61px;
     text-align: center;
 }
+
+@media (min-width: 767.98px) {
+    .statusBox p {
+        max-width: 40px;
+        text-align: center;
+    }
+    .statusText {
+        display: inline-flex;
+        color: #ffff;
+        font-size: 8px;
+    }    
+}
+
+@media (min-width: 991.98px) {
+    .statusBox p {
+        max-width: 45px;
+        text-align: center;
+    }
+    .statusText {
+        display: inline-flex;
+        color: #ffff;
+        font-size: 8px;
+    }    
+}
