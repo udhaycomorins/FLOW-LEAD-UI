@@ -171,7 +171,7 @@ a{
     height: 58px;
 }
 .leadSearchsidecontainerBoxshadow{
-    box-shadow: 1px 1px 20px #406882;
+    box-shadow: 1px 1px 20px #00374E;
     margin: 0px 19px;            
 }
 .scrollableLeadlists{
@@ -345,8 +345,8 @@ a{
 .userNamerefont{
     font-size: 14px;
 }
-.sideBarfnIcon{
-    padding-left: 30px!important;
+.sideBarfnIcon{   
+    padding: 5px 0px 5px 30px !important;
 }
 .sideBarfnIconpad{
     padding-right: 3px;
